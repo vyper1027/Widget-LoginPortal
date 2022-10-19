@@ -1,0 +1,67 @@
+{
+ "servicesURLs": 	{
+		"FLCM": {
+				"name": "FLCM",
+				"url": "https://planordenamiento-des.ant.gov.co/arcgis/rest/services/FRM_UNIFICADOS/FORM_Unificado/FeatureServer/3/",
+				"searchField": "id_barrido_ant"
+		},
+		"FISO": {
+				"name": "FISO",
+				"url":"https://planordenamiento-des.ant.gov.co/arcgis/rest/services/FRM_UNIFICADOS/FORM_Unificado/FeatureServer/2/",
+				"searchField": "sa_id_barrido_ant"
+			},
+		"FADC": {
+				"name": "FADC",
+				"url": "https://planordenamiento-des.ant.gov.co/arcgis/rest/services/FRM_UNIFICADOS/FORM_Unificado/FeatureServer/1/",
+				"searchField": "id_barrido_ant"
+		},
+		"FED": {
+				"name": "FED",
+				"url": "https://planordenamiento-des.ant.gov.co/arcgis/rest/services/FRM_UNIFICADOS/FORM_Unificado/FeatureServer/4/",
+				"searchField": "ID_Barrido_ANT"
+		} 
+	},
+ "defaultTitle": "ArcGIS Web Map",
+ "services": [
+				{
+					"url": "https://services3.arcgis.com/8cBoM4o6pnuUb1z1/ArcGIS/rest/services/SIDENCO_SinMalla/FeatureServer/11",
+					"label": "Cuadrantes",
+					"returnGeometry": false,
+					"outFields": ["CODIGO_SIEDCO", "NRO_CUADRANTE"],
+					"popUpLabels": ["Código SIEDCO Cuadrante", "Número Cuadrante"],
+					"urlParams": ["&Cuadrante=", "&NRO_CUADRANTE="]
+				},
+				{
+					"url": "https://services3.arcgis.com/8cBoM4o6pnuUb1z1/ArcGIS/rest/services/SIDENCO_SinMalla/FeatureServer/3",
+					"label": "Municipios",
+					"returnGeometry": false,
+					"outFields": ["CODIGO", "NOMBRE"],
+					"popUpLabels": ["Código DANE", "Municipio"],
+					"urlParams": ["&Cod_DANE=", "&nom_municipio="]
+				},
+				{
+					"url": "https://services3.arcgis.com/8cBoM4o6pnuUb1z1/ArcGIS/rest/services/SIDENCO_SinMalla/FeatureServer/9",
+					"label": "Estaciones",
+					"returnGeometry": false,
+					"outFields": ["CODIGO_SIEDCO"],
+					"popUpLabels": ["Código Estación"],	
+					"urlParams": ["&Cod_Estacion="]
+				},
+				{
+					"url": "https://services3.arcgis.com/8cBoM4o6pnuUb1z1/ArcGIS/rest/services/SIDENCO_SinMalla/FeatureServer/4",
+					"label": "Barrios",
+					"returnGeometry": false,
+					"outFields": ["NOMBRE"],
+					"popUpLabels": ["Barrio"],
+					"urlParams": ["&Barrio="]
+				},
+				{
+					"url": "https://services3.arcgis.com/8cBoM4o6pnuUb1z1/ArcGIS/rest/services/SIDENCO_SinMalla/FeatureServer/12",
+					"label": "CRurales",
+					"returnGeometry": false,
+					"outFields": ["SIEDCO"],
+					"popUpLabels": ["Número Cuadrante Rural"],
+					"urlParams": ["&SiedcoCua_Rural="]
+				}
+		]
+	}

@@ -1,0 +1,12 @@
+{
+ "name": "PortalLogin",
+ "platform": "HTML",
+ "version": "2.21",
+ "wabVersion": "2.21",
+ "properties": {
+		"hasLocale": false,
+		"hasStyle": true,
+		"hasConfig": true,
+		"hasSettingPage": false	
+ }
+}

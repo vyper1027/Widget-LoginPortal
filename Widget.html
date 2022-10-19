@@ -1,0 +1,53 @@
+<div class="login-node-container">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" rel="stylesheet">
+	<div class="login-container">
+		<div class="screen">
+			<div class="screen__content">
+				<form class="login" id="login-form">
+					<div class="login__field">
+						<i class="login__icon fas fa-user"></i>
+						<input id="user-name" name="user-name" type="text" class="login__input" placeholder="Nombre de usuario">
+					</div>
+					<div class="login__field">
+						<i class="login__icon fas fa-lock"></i>
+						<input id="user-password" name="user-password" type="password" class="login__input" placeholder="Contraseña" autocomplete="on">
+					</div>
+					<button class="button login__submit">
+						<span class="button__text">Autenticarse</span>
+						<i class="button__icon fas fa-chevron-right"></i>
+					</button>				
+				</form>				
+			</div>
+			<div class="screen__background">
+				<span class="screen__background__shape screen__background__shape4"></span>
+				<span class="screen__background__shape screen__background__shape3"></span>		
+				<span class="screen__background__shape screen__background__shape2"></span>
+				<span class="screen__background__shape screen__background__shape1"></span>
+			</div>		
+		</div>
+	</div>
+	<div class="filter-data-container">
+		<label class="muni-label" for="municipio-selector">elije un municipio <br></label>
+		<br>
+		<div class="column-data-container">
+			<select name="municipio-selector" class="select-muni"id="municipio-selector">
+			</select>
+			<select name="form-selector" class="select-form" id="form-selector">
+				<option value="FLCM">Levantamiento Catastral Multipropósito</option>
+    <option value="FISO">Inscripción de Sujetos de Ordenamiento</option>
+    <option value="FED">Enfoque Diferencial</option>
+    <option value="FADC">Acciones Diferenciadas y Conflictividad</option>
+			</select>
+			<button class="filter-selected-muni glow-on-hover" id="search-muni-button">Consultar</button>
+		</div>		
+		
+		<div class="downside-filter-data-container">
+			<hr class="dashed">	
+		<div class="box-3">
+			<div class="btn btn-three">
+					<span class="close-session-text">Cerrar Sessión</span>
+			</div>
+		</div>
+		</div>
+	</div>	
+</div>
